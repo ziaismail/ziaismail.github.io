@@ -1,0 +1,328 @@
+/*General font nad design*/
+@media (min-width: 0) {
+	.sticky + .content {
+		padding-top: 320px;
+	}
+
+	html {
+		scroll-padding-top: 320px;
+	}
+}
+
+
+@media (min-width: 642px) {
+	.sticky + .content {
+		padding-top: 275px;
+	}
+
+	html {
+		scroll-padding-top: 275px;
+	}
+}
+
+@media (min-width: 743px) {
+	.sticky + .content {
+		padding-top: 225px;
+	}
+
+	html {
+		scroll-padding-top: 225px;
+	}
+}
+
+@media (min-width: 1162px) {
+	.sticky + .content {
+		padding-top: 175px;
+	}
+
+	html {
+		scroll-padding-top: 175px;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	-webkit-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	font-family: Helvetica;
+	color: black;
+}
+
+
+/*Nav bar design*/
+#navbar {
+	overflow: hidden;
+	background-color: rgb(196, 148, 12);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+}
+
+#navbar a {	
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#navbar a:hover {
+	background-color: rgb(128, 103, 37);
+}
+
+#logo {
+	text-align: center;
+	width: 100%;
+	background-color: rgb(196, 148, 12);
+}
+
+#header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/curtin-background.png");
+	height: 82vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: -1;
+}
+
+#header-text {
+	color: white;
+	text-align: center;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+#theme-div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 25px;
+}
+
+
+.light-btn {
+	border-style: none;
+	background-color: white;
+	border-radius: 10px 10px;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.light-btn:hover {
+	background-color: lightgray;
+}
+
+.dark-btn {
+	border-style: none;
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px;
+	padding: 7px;
+	cursor: pointer;
+}
+
+.dark-btn:hover {
+	background-color: dimgray;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+/*links*/
+a {
+	text-decoration: none;
+	color: orange;
+}
+
+a:hover {
+	color: darkred;
+}
+
+a:visited {
+	color: darkorange;
+}
+
+a:visited:hover {
+	color: darkred;
+}
+
+section {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-bottom: 7vh;
+}
+
+#Home {
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 3vh;
+}
+
+p {
+	text-align: justify;
+}
+
+.title1 p {
+	font-size: 2.5em;
+	padding: 0;
+	margin: 0;
+}
+
+.title1 {
+	padding-bottom: 10vh;
+}
+
+/*table styling*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+.inner-table {
+	margin-left: 0;
+	text-align: left;
+}
+
+.inner-table td {
+	padding-left: 20px;
+}
+
+#info-table th {
+	vertical-align: top;
+}
+
+.lrn-outcomes td, 
+.lrn-outcomes th {
+	border: 1px solid;
+	padding: 10px;
+}
+
+.lrn-outcomes table {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-bottom: 5vh;
+}
+
+.lrn-outcomes img {
+	width: 50px;
+	height: 50px;
+}
+
+.unit-change td, 
+.unit-change th {
+	border: 1px solid;
+	padding: 10px;
+
+}
+
+.unit-change table {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-bottom: 5vh;
+}
+
+.unit-change img {
+	width: auto;
+	height: 50px;
+}
+
+.prgm-cal td, 
+.prgm-cal th {
+	border: 1px solid;
+	padding: 10px;
+	text-align: center;
+}
+
+.prgm-cal table {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-bottom: 5vh;
+}
+
+.prgm-cal img {
+	width: 50px;
+	height: 50px;
+}
+
+.as .ot-td,
+.as .ot-th {
+	border: 1px solid;
+}
+
+.as .ot-td {
+	vertical-align: top;
+}
+
+.as .ot-th{
+	text-align: center;
+	padding: 10px;
+}
+
+.as .ot {
+	border-collapse: collapse;
+	empty-cells: hide;
+}
+
+.tcw {
+	width: 100px;
+}
+
+
+ul, ol {
+	list-style-position: outside;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.assess-list > li::marker {
+	font-weight: bold;
+}
+
+.bottom-nav {
+	overflow: hidden;
+	background-color: black;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 7vh;
+	font-weight: bold;
+}
+
+.bottom-nav a {
+	color: white;
+	padding: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: center;
+	display: inline-block;
+}
+
+
+#Title p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
